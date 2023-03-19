@@ -78,66 +78,68 @@ if (isset($_POST["submit"])) {
 </head>
 
 <body>
-  <nav>
-    <div id="nav-logo-section" class="nav-section">
-      <a href="index.html" class="logo">SLVDR</a>
-    </div>
-    <div id="nav-link-section" class="nav-section">
-      <a href="about.html">ABOUT</a>
-      <a href="work.html">WORK</a>
-    </div>
-    <div id="nav-social-section" class="nav-section">
-      <a href="https://github.com/SLVDRjr" target="_blank"><i class="fa-brands fa-github"></i></a>
-    </div>
-    <div id="nav-contact-section" class="nav-section">
-      <a href="contact.php" class="active">GET IN TOUCH</a>
-    </div>
-    <button class="nav-bars" aria-expanded="false">
-      <span class="bar"></span>
-      <span class="bar"></span>
-    </button>
-    <!-- Mobile Nav -->
-    <div class="mobile-nav" data-visible="false">
-      <div id="mobile-nav-link-section" class="mobile-nav-section">
+  <div class="wrapper">
+    <nav>
+      <div id="nav-logo-section" class="nav-section">
+        <a href="index.html" class="logo">SLVDR</a>
+      </div>
+      <div id="nav-link-section" class="nav-section">
         <a href="about.html">ABOUT</a>
         <a href="work.html">WORK</a>
-        <a href="contact.php" class="active">CONTACT</a>
       </div>
-      <div id="mobile-nav-social-section" class="mobile-nav-section">
+      <div id="nav-social-section" class="nav-section">
         <a href="https://github.com/SLVDRjr" target="_blank"><i class="fa-brands fa-github"></i></a>
       </div>
-    </div>
-  </nav>
+      <div id="nav-contact-section" class="nav-section">
+        <a href="contact.php" class="active">GET IN TOUCH</a>
+      </div>
+      <button class="nav-bars" aria-expanded="false">
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+      <!-- Mobile Nav -->
+      <div class="mobile-nav" data-visible="false">
+        <div id="mobile-nav-link-section" class="mobile-nav-section">
+          <a href="about.html">ABOUT</a>
+          <a href="work.html">WORK</a>
+          <a href="contact.php" class="active">CONTACT</a>
+        </div>
+        <div id="mobile-nav-social-section" class="mobile-nav-section">
+          <a href="https://github.com/SLVDRjr" target="_blank"><i class="fa-brands fa-github"></i></a>
+        </div>
+      </div>
+    </nav>
+    <main class="contact">
+      <article>
+        <div class="contact-info-section article-section">
+          <p class="title">CONTACT</p>
+          <h2>GET IN TOUCH</h2>
+          <p>43.wsalvador@gmail.com</p>
+        </div>
+        <div class="contact-form-section article-section">
+          <form method="POST" id="contact-form">
+            <div class="form-group">
+              <label for="name">NAME <span><?= $name_error; ?></span></label>
+              <input type="text" id="name" name="name" value="<?= $name; ?>" />
+            </div>
+            <div class="form-group">
+              <label for="email">EMAIL <span><?= $email_error; ?></label>
+              <input type="email" id="email" name="email" value="<?= $email; ?>" />
+            </div>
+            <div class="form-group">
+              <label for="message">MESSAGE <span><?= $message_error; ?></label>
+              <textarea id="message" name="message"><?= $message; ?></textarea>
+            </div>
+            <input class="submit" type="submit" name="submit" value="SUBMIT" />
+          </form>
+        </div>
+        <div class="contact-footer-section">
+          <p>2023 &copy; William Salvador Jr.</p>
+        </div>
+      </article>
+    </main>
+  </div>
 
-  <main class="contact">
-    <article>
-      <div class="contact-info-section article-section">
-        <p class="title">CONTACT</p>
-        <h2>GET IN TOUCH</h2>
-        <p>43.wsalvador@gmail.com</p>
-      </div>
-      <div class="contact-form-section article-section">
-        <form method="POST" id="contact-form">
-          <div class="form-group">
-            <label for="name">NAME <span><?= $name_error; ?></span></label>
-            <input type="text" id="name" name="name" value="<?= $name; ?>" />
-          </div>
-          <div class="form-group">
-            <label for="email">EMAIL <span><?= $email_error; ?></label>
-            <input type="email" id="email" name="email" value="<?= $email; ?>" />
-          </div>
-          <div class="form-group">
-            <label for="message">MESSAGE <span><?= $message_error; ?></label>
-            <textarea id="message" name="message"><?= $message; ?></textarea>
-          </div>
-          <input class="submit" type="submit" name="submit" value="SUBMIT" />
-        </form>
-      </div>
-      <div class="contact-footer-section">
-        <p>2023 &copy; William Salvador Jr.</p>
-      </div>
-    </article>
-  </main>
   <script src="main.js"></script>
   <script src="contact.js"></script>
 </body>
