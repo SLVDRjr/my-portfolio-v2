@@ -59,11 +59,18 @@ body{
   font-family: 'Gajraj One', cursive;
   color: #e2e2e2;
   background-color: var(--bg-primary);
+  overflow-x: hidden;
+  line-height: 1.5;
+}
+
+.wrapper{
+  max-width: 1440px;
+  margin-inline: auto;
   display: flex;
   flex-direction: column;
   height: 100vh;
-  overflow-x: hidden;
-  line-height: 1.5;
+  border: 1px solid var(--border-color);
+  border-bottom: none;
 }
 
 nav{
@@ -85,6 +92,10 @@ nav > .nav-section{
   gap: 1rem;
   border-left: 1px solid var(--border-color);
   flex-grow: 1;
+}
+
+nav > .nav-section:nth-child(1){
+  border-left: none;
 }
 
 #nav-logo-section{
@@ -233,6 +244,7 @@ nav > .nav-section{
 /* HOME main */
 main.home{
   flex-grow: 1;
+
 }
 
 main.home > article{
@@ -498,24 +510,24 @@ main.work > article[data-status="active"]{
 }
 
 main.work > article[data-status="inactive"]{
-  transform: translateX(-100%);
+  transform: translateX(-200%);
 }
 
 main.work > article[data-status="after"]{
-  transform: translateX(100%);
+  transform: translateX(200%);
 }
 
 main.work > article[data-status="before"]{
-  transform: translateX(-100%);
+  transform: translateX(-200%);
 }
 
 main.work > article[data-status="becoming-active-from-before"]{
-  transform: translateX(-100%);
+  transform: translateX(-200%);
   transition: none;
 }
 
 main.work > article[data-status="becoming-active-from-after"]{
-  transform: translateX(100%);
+  transform: translateX(200%);
   transition: none;
 }
 
@@ -535,12 +547,27 @@ main.work article .work-image-section{
   overflow: hidden;
 }
 
-main.work article .work-image-section img:nth-child(1){
+main.work article .work-image-section img{
   position: absolute;
   width: 100%;
   height: 100%;
   object-fit: cover;
   z-index: 1;
+}
+
+main.work article .work-image-section#first-work-image-section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main.work article .work-image-section#first-work-image-section h2{
+  font-family: 'Monteseratt', sans-serif;
+  font-weight: 300;
+  font-size: 4rem;
+  box-shadow: 0 0 10px #002fff;
+  border-radius: 5px;
+  padding: 2rem;
 }
 
 main.work article .work-description-section{
@@ -573,6 +600,10 @@ main.work article .work-description-section .tags{
   flex-grow: 1;
 }
 
+.work-title-links.my-portfolio-link a{
+  flex-grow: unset;
+}
+
 .work-title-links a:hover{
   background-color: #000e4e;
 }
@@ -596,14 +627,6 @@ main.work article .work-title-section{
   position: relative;
   padding: 0 2rem;
 }
-
-main.work article .work-title-section:hover .work-title-links{
-  transform: translateY(0%);
-}
-
-main.work article .work-title-section:hover .work-title-icon{
-  transform: rotate(0deg);
-}  
 
 main.work article .work-title-section h2{
   font-size: 3rem;
