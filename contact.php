@@ -139,7 +139,6 @@ if (isset($_POST["submit"])) {
       </article>
     </main>
   </div>
-
   <script src="main.js"></script>
   <script src="contact.js"></script>
 </body>
