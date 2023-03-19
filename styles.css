@@ -243,7 +243,6 @@ nav > .nav-section:nth-child(4){
 /* HOME main */
 main.home{
   flex-grow: 1;
-
 }
 
 main.home > article{
@@ -499,7 +498,6 @@ main.work > article{
   top: 0;
   display: grid;
   grid-template-rows: 1fr 1fr 1fr .5fr;
-  /* height: 100%; */
   width: 100%;
   transition: transform 400ms ease;
 }
@@ -532,7 +530,6 @@ main.work > article[data-status="becoming-active-from-after"]{
 
 main.work > article > .article-section{
   padding: 4rem 2rem;
-  /* height: 100%; */
 }
 
 main.work > article > .work-title-section{
