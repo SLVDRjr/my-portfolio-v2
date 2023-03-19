@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gajraj+One&family=Montserrat:wght@300&family=Tilt+Prism&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Portfolio New Version</title>
+  </head>
+  <body>
+    <nav>
+      <div id="nav-logo-section" class="nav-section">
+        <a href="index.html" class="logo">SLVDR</a>
+      </div>
+      <div id="nav-link-section" class="nav-section">
+        <a href="about.html" class="active">ABOUT</a>
+        <a href="work.html">WORK</a>
+      </div>
+      <div id="nav-social-section" class="nav-section">
+        <a href="https://github.com/SLVDRjr" target="_blank"
+          ><i class="fa-brands fa-github"></i
+        ></a>
+      </div>
+      <div id="nav-contact-section" class="nav-section">
+        <a href="contact.php">GET IN TOUCH</a>
+      </div>
+      <button class="nav-bars" aria-expanded="false">
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+      <!-- Mobile Nav -->
+      <div class="mobile-nav" data-visible="false">
+        <div id="mobile-nav-link-section" class="mobile-nav-section">
+          <a href="about.html" class="active">ABOUT</a>
+          <a href="work.html">WORK</a>
+          <a href="contact.php">CONTACT</a>
+        </div>
+        <div id="mobile-nav-social-section" class="mobile-nav-section">
+          <a href="https://github.com/SLVDRjr" target="_blank"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+        </div>
+      </div>
+    </nav>
+
+    <main class="about">
+      <article>
+        <div class="about-info-section article-section">
+          <p class="title">ABOUT</p>
+          <p>
+            My name is William, an aspiring front-end developer. I am currently
+            learning and diving deeper into web development.
+          </p>
+          <p>
+            I believe that effort gets things done and patience sees them
+            through. Both are crucial to success.
+          </p>
+        </div>
+        <div class="about-image-section article-section">
+          <div class="profile">
+            <div class="profile-container">
+              <img
+                src="background-img/profile-bg.jpg"
+                alt=""
+                class="profile-circle"
+              />
+              <img
+                src="profile-pictures/profile-2.png"
+                alt=""
+                class="profile-img"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="about-frontend-skills-section article-section">
+          <div class="frontend">
+            <h3>FRONTEND</h3>
+            <div class="frontend-skills">
+              <div class="frontend-skill">
+                <i class="fa-brands fa-html5"></i>
+                <span>HTML</span>
+              </div>
+              <div class="frontend-skill">
+                <i class="fa-brands fa-css3-alt"></i>
+                <span>CSS</span>
+              </div>
+              <div class="frontend-skill">
+                <i class="fa-brands fa-square-js"></i> <span>JAVASCRIPT</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="about-backend-skills-section article-section">
+          <div class="backend">
+            <h3>BACKEND</h3>
+            <div class="backend-skill">
+              <i class="fa-brands fa-php"></i><span>PHP</span>
+            </div>
+          </div>
+        </div>
+      </article>
+    </main>
+    <script src="main.js"></script>
+    <script src="about.js"></script>
+  </body>
+</html>

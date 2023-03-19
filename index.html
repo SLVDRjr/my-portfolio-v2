@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gajraj+One&family=Montserrat:wght@300&family=Tilt+Prism&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Portfolio New Version</title>
+  </head>
+  <body>
+    <nav>
+      <div id="nav-logo-section" class="nav-section">
+        <a href="index.html" class="logo">SLVDR</a>
+      </div>
+      <div id="nav-link-section" class="nav-section">
+        <a href="about.html">ABOUT</a>
+        <a href="work.html">WORK</a>
+      </div>
+      <div id="nav-social-section" class="nav-section">
+        <a href="https://github.com/SLVDRjr" target="_blank"
+          ><i class="fa-brands fa-github"></i
+        ></a>
+      </div>
+      <div id="nav-contact-section" class="nav-section">
+        <a href="contact.php">GET IN TOUCH</a>
+      </div>
+      <button class="nav-bars" aria-expanded="false">
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+      <!-- Mobile Nav -->
+      <div class="mobile-nav" data-visible="false">
+        <div id="mobile-nav-link-section" class="mobile-nav-section">
+          <a href="about.html">ABOUT</a>
+          <a href="work.html">WORK</a>
+          <a href="contact.php">CONTACT</a>
+        </div>
+        <div id="mobile-nav-social-section" class="mobile-nav-section">
+          <a href="https://github.com/SLVDRjr" target="_blank"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+        </div>
+      </div>
+    </nav>
+    <main class="home">
+      <article>
+        <div class="hero-image-section article-section">
+          <img src="profile-pictures/profile-1.png" alt="" />
+        </div>
+        <div class="hero-info-section article-section">
+          <div class="hero-info">
+            <span>
+              Hello, <br />
+              I am William
+            </span>
+            <p>
+              An aspiring front-end developer. I code simple things beautifully
+              and I love what I do.
+            </p>
+          </div>
+        </div>
+        <div class="hero-nav-section article-section">
+          <a href="work.html" class="article-nav-button">
+            <span class="arrow second"
+              ><i class="fa-solid fa-chevron-left"></i
+            ></span>
+            <span class="arrow first"
+              ><i class="fa-solid fa-chevron-left"></i
+            ></span>
+            <span class="hero-nav-text">SEE MY WORK</span>
+          </a>
+
+          <a href="about.html" class="article-nav-button">
+            <span class="hero-nav-text">ABOUT ME</span>
+            <span class="arrow first"
+              ><i class="fa-solid fa-chevron-right"></i
+            ></span>
+            <span class="arrow second"
+              ><i class="fa-solid fa-chevron-right"></i
+            ></span>
+          </a>
+        </div>
+      </article>
+    </main>
+    <script src="main.js"></script>
+  </body>
+</html>

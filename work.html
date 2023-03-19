@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gajraj+One&family=Montserrat:wght@300&family=Tilt+Prism&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Portfolio New Version</title>
+  </head>
+  <body>
+    <nav>
+      <div id="nav-logo-section" class="nav-section">
+        <a href="index.html" class="logo">SLVDR</a>
+      </div>
+      <div id="nav-link-section" class="nav-section">
+        <a href="about.html">ABOUT</a>
+        <a href="work.html" class="active">WORK</a>
+      </div>
+      <div id="nav-social-section" class="nav-section">
+        <a href="https://github.com/SLVDRjr" target="_blank"
+          ><i class="fa-brands fa-github"></i
+        ></a>
+      </div>
+      <div id="nav-contact-section" class="nav-section">
+        <a href="contact.php">GET IN TOUCH</a>
+      </div>
+      <button class="nav-bars" aria-expanded="false">
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+      <!-- Mobile Nav -->
+      <div class="mobile-nav" data-visible="false">
+        <div id="mobile-nav-link-section" class="mobile-nav-section">
+          <a href="about.html">ABOUT</a>
+          <a href="work.html" class="active">WORK</a>
+          <a href="contact.php">CONTACT</a>
+        </div>
+        <div id="mobile-nav-social-section" class="mobile-nav-section">
+          <a href="https://github.com/SLVDRjr" target="_blank"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+        </div>
+      </div>
+    </nav>
+
+    <main class="work">
+      <article class="slide" data-index="0" data-status="active">
+        <div class="work-image-section article-section">
+          <img
+            src="background-img/home-desktop.jpg"
+            alt="a dark blue themed portfolio"
+          />
+        </div>
+        <div class="work-description-section article-section">
+          <div class="tags">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JAVASCRIPT</span>
+            <span>PHP</span>
+          </div>
+          <p>
+            A dark-blue themed portfolio. It contains home, about, work and
+            contact page built with html, css, javascript and php for the
+            contact form. Submitted form is save in a csv file.
+          </p>
+          <div class="work-title-links">
+            <a href="">View Website</a>
+            <a href="">View Source Code</a>
+          </div>
+        </div>
+        <div class="work-title-section article-section">
+          <h2 class="work-title">MY PORTFOLIO</h2>
+          <div class="eyes">
+            <div class="brow"></div>
+            <div class="brow"></div>
+            <div class="eye">
+              <div class="eye-shadow"></div>
+              <div class="eye-ball"></div>
+            </div>
+            <div class="eye">
+              <div class="eye-shadow"></div>
+              <div class="eye-ball"></div>
+            </div>
+          </div>
+        </div>
+        <div class="work-nav-section article-section">
+          <button
+            id="arrow-left"
+            class="work-nav-button"
+            type="button"
+            onclick="handleLeftClick()"
+          >
+            <span class="arrow second"
+              ><i class="fa-solid fa-chevron-left"></i
+            ></span>
+            <span class="arrow first"
+              ><i class="fa-solid fa-chevron-left"></i
+            ></span>
+          </button>
+          <button
+            id="arrow-right"
+            class="work-nav-button"
+            type="button"
+            onclick="handleRightClick()"
+          >
+            <span class="arrow first"
+              ><i class="fa-solid fa-chevron-right"></i
+            ></span>
+            <span class="arrow second"
+              ><i class="fa-solid fa-chevron-right"></i
+            ></span>
+          </button>
+        </div>
+      </article>
+
+      <article class="slide" data-index="1" data-status="inactive">
+        <div class="work-image-section article-section">
+          <img
+            src="background-img/todo-list.jpg"
+            alt="light and dark blue themed todo list"
+          />
+        </div>
+        <div class="work-description-section article-section">
+          <div class="tags">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JAVASCRIPT</span>
+          </div>
+          <p>
+            A simple todo list app with the ability to display, create, edit and
+            delete your tasks. I used local storage built into a web browser to
+            save to-do items.
+          </p>
+          <div class="work-title-links">
+            <a href="">View Website</a>
+            <a href="https://github.com/SLVDRjr/todo-list" target="_blank"
+              >View Source Code</a
+            >
+          </div>
+        </div>
+        <div class="work-title-section article-section">
+          <h2 class="work-title">TODO LIST APP</h2>
+          <div class="eyes">
+            <div class="brow"></div>
+            <div class="brow"></div>
+            <div class="eye">
+              <div class="eye-shadow"></div>
+              <div class="eye-ball"></div>
+            </div>
+            <div class="eye">
+              <div class="eye-shadow"></div>
+              <div class="eye-ball"></div>
+            </div>
+          </div>
+        </div>
+        <div class="work-nav-section article-section">
+          <button
+            id="arrow-left"
+            class="work-nav-button"
+            type="button"
+            onclick="handleLeftClick()"
+          >
+            <span class="arrow second"
+              ><i class="fa-solid fa-chevron-left"></i
+            ></span>
+            <span class="arrow first"
+              ><i class="fa-solid fa-chevron-left"></i
+            ></span>
+          </button>
+          <button
+            id="arrow-right"
+            class="work-nav-button"
+            type="button"
+            onclick="handleRightClick()"
+          >
+            <span class="arrow first"
+              ><i class="fa-solid fa-chevron-right"></i
+            ></span>
+            <span class="arrow second"
+              ><i class="fa-solid fa-chevron-right"></i
+            ></span>
+          </button>
+        </div>
+      </article>
+
+      <article class="slide" data-index="2" data-status="inactive">
+        <div class="work-image-section article-section">
+          <img
+            src="background-img/sushi-template-website.png"
+            alt="homepage for a sushi website"
+          />
+        </div>
+        <div class="work-description-section article-section">
+          <div class="tags">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JAVASCRIPT</span>
+          </div>
+          <p>A fully responsive homepage template for a sushi website.</p>
+          <div class="work-title-links">
+            <a href="">View Website</a>
+            <a
+              href="https://github.com/SLVDRjr/sushi-homepage-template"
+              target="_blank"
+              >View Source Code</a
+            >
+          </div>
+        </div>
+        <div class="work-title-section article-section">
+          <h2 class="work-title">HOMEPAGE TEMPLATE</h2>
+          <div class="eyes">
+            <div class="brow"></div>
+            <div class="brow"></div>
+            <div class="eye">
+              <div class="eye-shadow"></div>
+              <div class="eye-ball"></div>
+            </div>
+            <div class="eye">
+              <div class="eye-shadow"></div>
+              <div class="eye-ball"></div>
+            </div>
+          </div>
+        </div>
+        <div class="work-nav-section article-section">
+          <button
+            id="arrow-left"
+            class="work-nav-button"
+            type="button"
+            onclick="handleLeftClick()"
+          >
+            <span class="arrow second"
+              ><i class="fa-solid fa-chevron-left"></i
+            ></span>
+            <span class="arrow first"
+              ><i class="fa-solid fa-chevron-left"></i
+            ></span>
+          </button>
+          <button
+            id="arrow-right"
+            class="work-nav-button"
+            type="button"
+            onclick="handleRightClick()"
+          >
+            <span class="arrow first"
+              ><i class="fa-solid fa-chevron-right"></i
+            ></span>
+            <span class="arrow second"
+              ><i class="fa-solid fa-chevron-right"></i
+            ></span>
+          </button>
+        </div>
+      </article>
+
+      <article class="slide" data-index="3" data-status="inactive">
+        <div class="work-image-section article-section">
+          <img
+            src="background-img/image-slider.png"
+            alt="an image of a slider"
+          />
+        </div>
+        <div class="work-description-section article-section">
+          <div class="tags">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JAVASCRIPT</span>
+          </div>
+          <p>A draggable image slider.</p>
+          <div class="work-title-links">
+            <a href="">View Website</a>
+            <a
+              href="https://github.com/SLVDRjr/draggable-image-slider"
+              target="_blank"
+              >View Source Code</a
+            >
+          </div>
+        </div>
+        <div class="work-title-section article-section">
+          <h2 class="work-title">IMAGE SLIDER</h2>
+          <div class="eyes">
+            <div class="brow"></div>
+            <div class="brow"></div>
+            <div class="eye">
+              <div class="eye-shadow"></div>
+              <div class="eye-ball"></div>
+            </div>
+            <div class="eye">
+              <div class="eye-shadow"></div>
+              <div class="eye-ball"></div>
+            </div>
+          </div>
+        </div>
+        <div class="work-nav-section article-section">
+          <button
+            id="arrow-left"
+            class="work-nav-button"
+            type="button"
+            onclick="handleLeftClick()"
+          >
+            <span class="arrow second"
+              ><i class="fa-solid fa-chevron-left"></i
+            ></span>
+            <span class="arrow first"
+              ><i class="fa-solid fa-chevron-left"></i
+            ></span>
+          </button>
+          <button
+            id="arrow-right"
+            class="work-nav-button"
+            type="button"
+            onclick="handleRightClick()"
+          >
+            <span class="arrow first"
+              ><i class="fa-solid fa-chevron-right"></i
+            ></span>
+            <span class="arrow second"
+              ><i class="fa-solid fa-chevron-right"></i
+            ></span>
+          </button>
+        </div>
+      </article>
+    </main>
+    <script src="main.js"></script>
+  </body>
+</html>

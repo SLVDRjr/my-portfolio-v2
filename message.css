@@ -1,0 +1,48 @@
+/* MESSAGE main */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Gajraj One', cursive;
+  background-color: #080147;
+  color: #e2e2e2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+h2{
+  font-size: 1.75rem;
+  text-align: center;
+}
+
+p{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+}
+
+.message{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 4rem 2rem; 
+  margin-inline: 1rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 5px #e2e2e2;
+}
+
+a{
+  display: flex;
+  align-self: flex-end;
+  color: #e2e2e2;
+  font-size: 1.25rem;
+  text-decoration: none;
+}
+
+.arrow.first{
+  margin-right: 1rem;
+}
