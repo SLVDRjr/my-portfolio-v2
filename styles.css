@@ -490,6 +490,7 @@ main.about > article .frontend-skill.show, main.about > article .backend-skill.s
 main.work{
   position: relative;
   flex-grow: 1;
+  overflow-x: hidden;
 }
 
 main.work > article{
